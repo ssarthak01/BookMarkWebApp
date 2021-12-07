@@ -1,0 +1,92 @@
+Hey all, I’m in zoom whenever we’re all ready. 
+
+Checklist:
+Team number
+5
+Team name
+ATLAS
+Team members
+Tyler Paik
+Sarthak Shukla
+Application name
+Bookmark
+
+Application description: 2-3 paragraphs - Andy
+Vision statement: one or two sentences - Andy
+Version control: link - Sarthak
+Development method: (albert)
+Communication plan(tyler)
+Meeting plan(tyler)
+Proposed architecture (Lucas)
+
+
+Check in Meeting - 5 Feb 4-4:20pm
+
+
+Proposal starts on next page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Proposal
+Team Number: 5
+Team Members: Lucas Derr, Andy Rittenhouse, Albert Tamayo, Tyler Paik, and Sarthak Shukla
+Team Name: ATLAS
+Application Name: Bookmark
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Application Description
+
+	Bookmark is a reading log and consumer review hub for books. A user will be able to rate, review, and track which books they have read, as well as browse the site for new books to read. Users can explore the website’s database of books by genre, or search for a specific book by title or author’s name. The information page for a book will display the average consumer rating, the book’s back-cover synopsis, as well as a list of other books by the author, and other top-rated books within the same genre. 
+	In addition, users will be able to follow other users to see what books they have read, rated, or reviewed.  Users can comment on and upvote helpful reviews. Additionally, when a review receives an upvote, the author of that review receives merit. Reviewers who reach a certain merit threshold will carry a small identification as a top reviewer. Bookmark is the next great way to find the perfect book. 
+
+Vision Statement
+	In progress...
+Version Control
+Development Method
+For the Development phase in our project we are using an agile and waterfall hybrid method. We would use agile for coding coding aspect of the project since we don’t have a grasp on creating a whole  
+Communication Plan
+ We have plans to communicate together using in time class on Zoom and online using the Discord application. We have created a group in Discord which allows us to send messages and files, as well as join a voice channel in which we can discuss our work. In addition to these, we have a Jira board laid out that gives us the ability to write comments, issues, and tasks that line up with our development method.
+Meeting Plan
+ Currently, we have set times in which we use either a Discord call or a Zoom meeting to work together. We currently plan to only meet online, but may adjust to in person on the CU campus as needed. Our current plan has us meeting on Sundays from 1 pm to 2 pm, and Mondays from 4 pm to 5 pm, all in mountain standard time. We also have a meeting with our TA scheduled on Mondays from 5:20 - 5:40 pm. We will occasionally meet up in alternate times as needed to finish certain tasks, at any time we choose on Discord.
+Proposed Architecture
+Due to our group’s lack of software development experience, the current proposed architecture will be tentative and likely evolve as the project progresses. With that said, our project will require database software to manage and store book and user data. We will use MySQL as it is the most reliable and common database software for web development. In addition, due to our preference for C++, the backend development will be done in C++. This will include developing correct data structures for the database, implementing a search function, user ratings, 
+
+
+
+
