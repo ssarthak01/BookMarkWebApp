@@ -1,0 +1,232 @@
+<%- include('../partials/header') %>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+            <form action='/books' method="get">
+                <% 
+                console.log(bookInfo.title);
+                if(bookInfo) {
+                    
+                    var cardAdd = '';
+                        cardAdd = '<div class="card"><img class="card-img-top" src="' + bookInfo.cover + '" alt="Book Cover image"><div class="card-body"><h5 class="card-title">' + bookInfo.title + ' </h5><ul class="list-group list-group-flush" ><li class="list-group-item">Author: ' + bookInfo.author + '</li><li class="list-group-item">Genres: '+ bookInfo.tags +'</li><li class="list-group-item">Publishing: '+ bookInfo.pub +'</li><li class="list-group-item">Year: '+ bookInfo.pubdate +'</li></ul></div></div>';
+                    %>
+                    <%- cardAdd%>
+                    <% } %>                          
+            </form>
+        </div>
+
+
+        <div class = "col-8">
+            <form action='/books' method="get">
+                <%
+                if(bookInfo) {
+                    var newCard = '';
+                        newCard = '<div class="card"><h4>Average Rating: '+ bookInfo.rating +'</h4></div>';
+                    %>
+                    <%- newCard%>
+                    <% } %>  
+            </form>
+            
+           
+            
+            <div class = "card">
+                <h4>Reviews: </h4>
+                <div class = "card-body">
+                    <p class = "card-text">
+                        Reviews Go Here
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="background-color: rgba(53, 53, 53, 0.2)">
+                <h4>
+                    Other Books by this Author:
+                </h4>
+                <div id="Carousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#Carousel" data-slide-to="1"></li>
+                        <li data-target="#Carousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                                <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                            src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                            style="max-width:100%;"></a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+                    </div>
+                    <!--.carousel-inner-->
+                    <a data-slide="prev" href="#Carousel" class="left carousel-control">&#x2039;</a>
+                    <a data-slide="next" href="#Carousel" class="right carousel-control">&#x203A;</a>
+                </div>
+        </div>
+        <div class="card" style="background-color: rgba(53, 53, 53, 0.2)">
+            <h4>
+                Other Books in this Genre:
+            </h4>
+            <div id="Carousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+                    <div class="item carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+                    <div class="item carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                            <div class="col-lg-3"><a href="#" class="thumbnail"><img
+                                        src="/Users/lucasderr/3308SP21_section013_5/All_Project_Code/resources/img/samplecover.jpg" alt="Image"
+                                        style="max-width:100%;"></a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+                </div>
+                <!--.carousel-inner-->
+                <a data-slide="prev" href="#Carousel" class="left carousel-control">&#x2039;</a>
+                <a data-slide="next" href="#Carousel" class="right carousel-control">&#x203A;</a>
+            </div>
+    </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<%- include('../partials/footer') %>
+    
+
+
+
+</body>
+
+</html>
