@@ -1,0 +1,325 @@
+<%- include('../partials/header') %>
+<!-- <img src="../project/img/reading-for-the-common-good-banner.jpg" class="img-fluid" alt="home reading banner" width="mr-auto" height="mr-auto" object-fit: cover> -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="jumbotron text-center">
+        <h1>Bookmark</h1>
+        <br>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">Fostering a community of readers that celebrates knowledge, creativity, and diversity of thought by connecting readers and creating a beautiful place to track their reading journeys.</div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Fiction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Religion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Biography
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+     <!--  -->
+     <!--  -->
+    <div class="container pt-5">
+       
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="container">
+                    <div id="carouselSlides_g1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselSlides_g1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselSlides_g1" data-slide-to="1"></li>
+                            <li data-target="#carouselSlides_g1" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <form action="/books" method = "get">
+                                    
+                                     
+                                 
+                                    <input type="image" class="d-block w-100" src="<%-fiction[0].cover %>" name = "book_selection" value = "<%- fiction[0].title %>">
+                                <div class="carousel-caption">
+                                    <div class="container">
+                                        <div class="card text-dark">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="carousel-item">
+                                <form action="/books" method = "get">
+                                 
+                                <input type="image" class="d-block w-100" src="<%-fiction[1].cover %>" name = "book_selection" value = "<%- fiction[1].title %>">
+                                <div class="carousel-caption">
+                                    <div class="container">
+                                        <div class="card text-dark">
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="carousel-item">
+                                <form action="/books" method = "get">
+                                 
+                                <input type="image" class="d-block w-100" src="<%- fiction[2].cover %>" name = "book_selection" value = "<%- fiction[2].title %>">
+                                <div class="carousel-caption">
+                                    <div class="container">
+                                        <div class="card text-dark">
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Allows one to change slides -->
+                        <a class="carousel-control-prev" href="#carouselSlides_g1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselSlides_g1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-sm-4">
+            <div id="container">
+                <div id="carouselSlides_g2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSlides_g2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSlides_g2" data-slide-to="1"></li>
+                        <li data-target="#carouselSlides_g2" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <form action="/books" method = "get">
+                                 
+                                <input type="image" class="d-block w-100" src="<%-religion[0].cover %>" name = "book_selection" value = "<%- religion[0].title %>">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="card text-dark">
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="carousel-item">
+                            <form action="/books" method = "get">
+                            <input type="image" class="d-block w-100" src="<%-religion[1].cover %>" name = "book_selection" value = "<%- religion[1].title %>">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="card text-dark">
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="carousel-item">
+                            <form action="/books" method = "get">
+                                <input type="image" class="d-block w-100" src="<%- religion[2].cover %>" name = "book_selection" value = "<%- religion[2].title %>">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="card text-dark">
+                        
+                                </div>
+                            </div>
+                        </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Allows one to change slides -->
+                    <a class="carousel-control-prev" href="#carouselSlides_g2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselSlides_g2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            </div>
+            <div class="col-sm-4">
+                    <div id="container">
+                        <div id="carouselSlides_g3" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselSlides_g3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselSlides_g3" data-slide-to="1"></li>
+                                <li data-target="#carouselSlides_g3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <form action="/books" method = "get">
+                                        <input type="image" class="d-block w-100" src="<%-biography[0].cover %>" name = "book_selection" value = "<%- biography[0].title %>">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="card text-dark">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="carousel-item">
+                                    <form action="/books" method = "get">
+                                        <input type="image" class="d-block w-100" src="<%-biography[1].cover %>" name = "book_selection" value = "<%- biography[1].title %>">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="card text-dark">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="carousel-item">
+                                    <form action="/books" method = "get">
+                                        <input type="image" class="d-block w-100" src="<%- biography[2].cover %>" name = "book_selection" value = "<%- biography[2].title %>">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="card text-dark">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                            </div>
+                            <!-- Allows one to change slides -->
+                            <a class="carousel-control-prev" href="#carouselSlides_g3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselSlides_g3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+       
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text"> Books are the plane, and the train, and the road. They are the destination, and the journey. They are home. -Anna Quindlen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">A room without books is like a body without a soul. -Cicero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" style="margin-top:30px">
+        
+
+        <!-- image -->
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Books of the week</h2>
+                <div>
+                    <div id="container_1">
+                        <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselSlides" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselSlides" data-slide-to="1"></li>
+                                <li data-target="#carouselSlides" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <form action="/books" method = "get">
+                                        <input type="image"img class="d-block w-100" src="<%- week[0].cover %>" name = "book_selection" value = "<%- week[0].title %>">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="card text-dark">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                </div>
+                                <div class="carousel-item">
+                                    <form action="/books" method = "get">
+                                        <input type="image"img class="d-block w-100" src="<%- week[1].cover %>" name = "book_selection" value = "<%- week[1].title %>">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="card text-dark">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="carousel-item">
+                                    <form action="/books" method = "get">
+                                        <input type="image"img class="d-block w-100" src="<%- week[2].cover %>" name = "book_selection" value = "<%- week[2].title %>">
+                                <div class="carousel-caption">
+                                    <div class="container">
+                                        <div class="card text-dark">
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Allows one to change slides -->
+                            <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br>
+    <br>
+    <br>
+
+    <%- include('../partials/footer') %>
